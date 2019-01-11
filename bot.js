@@ -89,7 +89,7 @@ client.on("message", message => {
 	
 client.on('ready', function(){
     var ms = 20000 ;    
-    var setGame = ['#invite','#help','By Lorans. | 4564 ','V2.0'];    
+    var setGame = ['Pure Shop'];    
     var i = -1;    
     var j = 0;    
     setInterval(function (){    
@@ -341,8 +341,8 @@ client.on('message',function(message) {
 
 
 
-const devs = ["525435533770620928"];
-const adminprefix = ["Dv"];
+const devs = ["398981984820658187"];
+const adminprefix = ["P"];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
@@ -377,72 +377,6 @@ if (message.content.startsWith('(prefix)avatar')) {
 });
 
 
-client.on('message', message => {
-    if (message.author.bot) return;
-     if (message.content ==="#help") {
-		 message.channel.send('**تم ارسالك في الخاص**');
-            
-	
-		 
-
-
- message.author.sendMessage(`
- **  اداريه اوامر
-
-
-  #kick <mention >  لطرد عضو
- 
-  #mute < mention >  اسكات عضو 
-
-  #clear   لتنضيف المحادثة (fixing)
-
-  #role  لتعطي لشخص رتبه او للكل
-
-  #cv <name>  صنع روم صوتية
-
-  #ct <name>  صنع روم كتابية
-
-  #unmute <mention>  فك الاسكات من العضو
-  
-  #bc <message>  لارسال رسالة لجميع اعضاء السيرفر
-
-  #move ➾ لسحب العضو الي الروم الصوتي
-
-  #voice <name>  عمل روم فيوس اونلين
-
-  عامه اوامر 
-
-
- #roll <number> ➾ قرعة
-
- #member ➾ معلومات الاعضاء
-
- #avatar ➾ شعار حسابك
-
- #new ➾فتح تزكره 
-
- #id ➾ اي دي
-
- #date ➾ التاريخ
-
- #bot ➾ معلومات البوت
-
- #server ➾ معلومات السيرفر
-
-
-  اخرى 
-  welcome :  الترحيب امر لتفعيل
-  #invite  : لدعوة البوت الى سيرفرك
-  #ping  : لمعرفة سرعة استجابة البوت في الوقت الحالي
-  #support  : سيرفر الدعم الفني
-
-**
-
-
-`);
-
-    }
-});
 
 client.on('message', message => {
     if (message.content.startsWith("رابط")) {
